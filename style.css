@@ -22,7 +22,7 @@ padding-top: 30px;
 
 .logo-image{
     height: 275px;
-    padding-left: 150px;
+    padding-left: 200px;
     
 }
 .a-element{
@@ -59,6 +59,7 @@ padding-top: 30px;
     padding-left: 200px;
     color: white;
     text-align: right;
+    size: 200px;
 }
 .Home-right{
     width: 50vw;
@@ -81,6 +82,7 @@ padding-top: 30px;
 .Home-p{
     font-family: "Encode Sans Expanded", sans-serif;
     color: #fff;
+
 }
 .Home-p:hover{
     color: aquamarine;
@@ -151,7 +153,7 @@ padding-top: 30px;
 .Aboutimg{
     height: 400px;
     display: flex;
-    padding-left: 30px;
+    padding-left: 300px;
     border:2px solid white;
 }
 .Aboutimg:hover{
@@ -182,4 +184,19 @@ padding-top: 30px;
 }
 .iitpic{
     padding-right: 50px;
+}
+.certificate{
+    color: #fff;
+    text-decoration: underline;
+}
+.certificate:hover{
+    color: aquamarine;
+}
+.certificate1{
+    color: #fff;
+    padding-left: 1000px;
+    text-decoration: underline;
+}
+.certificate1:hover{
+    color: aquamarine;
 }
