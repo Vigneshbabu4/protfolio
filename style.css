@@ -27,7 +27,7 @@ body {
 }
 
 .logo-image {
-    height: 100px; /* Adjust height for mobile */
+    height: 100px; /* Set height for logos */
     padding-left: 10px;
 }
 
@@ -140,7 +140,7 @@ body {
 
 @media only screen and (max-width: 768px) {
     .logo-image {
-        height: 80px;
+        height: 100px; /* Keep logos at the same size */
     }
 
     .a-element {
