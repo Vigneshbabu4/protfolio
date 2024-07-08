@@ -1,31 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&family=Headland+One&family=Oleo+Script:wght@400;700&family=Racing+Sans+One&display=swap');
-body{
+/* Default styles for all screen sizes */
+
+/* Example of existing styles */
+
+body {
     margin: 0%;
     background-color: black;
 }
-.navbar{
+
+.navbar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     background-color: rgba(3, 3, 3, 0.962);
 }
-.navbar-left{
+
+.navbar-left {
     padding-left: 30px;
 }
-.navbar-right {    
-padding-right: 100px;
-align-items: center;
-display: flex;
-flex-direction: row;
-padding-top: 30px;
+
+.navbar-right {
+    padding-right: 100px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
 }
 
-.logo-image{
+.logo-image {
     height: 275px;
     padding-left: 200px;
-    
 }
-.a-element{
+
+.a-element {
     padding: 10px;
     margin: 10px;
     color: white;
@@ -33,19 +39,23 @@ padding-top: 30px;
     font-size: 20px;
     font-weight: bold;
 }
-.a-element:hover{
+
+.a-element:hover {
     color: aquamarine;
 }
-.pic{
+
+.pic {
     height: 475px;
     padding-right: 10px;
     border-radius: 100vh;
     filter: grayscale(100%);
 }
-.pic:hover{
+
+.pic:hover {
     filter: grayscale(0%);
 }
-.Home{
+
+.Home {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -54,17 +64,20 @@ padding-top: 30px;
     margin: 5px;
     background-color: black;
 }
-.Home-left{
+
+.Home-left {
     width: 50vw;
     padding-left: 200px;
     color: white;
     text-align: right;
     size: 200px;
 }
-.Home-right{
+
+.Home-right {
     width: 50vw;
     padding-left: 100px;
 }
+
 .Home-h1 {
     background: linear-gradient(to right, rgba(0, 168, 253, 1), #fff 35%, #e00a95);
     background-size: 200% auto;
@@ -74,129 +87,100 @@ padding-top: 30px;
     font-size: 60px;
     font-family: "Racing Sans One", sans-serif;
 }
-@keyframes gradient{
-    0%{background-position: 0% 75%;}
-    50%{background-position:100% 50% ;}
-    100%{background-position: 0% 70;}
-}
-.Home-p{
-    font-family: "Encode Sans Expanded", sans-serif;
-    color: #fff;
 
+@keyframes gradient {
+    0% {
+        background-position: 0% 75%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 70;
+    }
 }
-.Home-p:hover{
-    color: aquamarine;
-}
-.Skills{
-    color: white;
-    padding: 50px;
-    text-align: center;
-}
-.headingskills{
-    font-family: "Headland One", serif;
-    font-size: 40px;
-    font-style: italic;
-    letter-spacing: 3px;
-    text-decoration: underline dotted;
-}
-.skill-container{
-    display: flex;
-    flex-direction: column;
-}
-.skil-card{
-    margin: 20px;
-}
-.skillh1{
-    font-family: "Headland One", serif;
-    text-decoration: underline;
-}
-.skillh2{
+
+.Home-p {
     font-family: "Encode Sans Expanded", sans-serif;
     color: #fff;
 }
-.skillh2:hover{
+
+.Home-p:hover {
     color: aquamarine;
 }
-.pic-2{
-   height: 150px
-}
-.pic-3{
-    height: 150px;
-}
-.pic-1{
-    height: 150px;
-}
-.contact{
-    color: #fff;
-    text-align: center;
-}
-.contact-info{
-    font-family: "Encode Sans Expanded", sans-serif;
-    color: #fff;
-}
-.contact-info:hover{
-    color: aquamarine;
-}
-.social-icons{
-    height: 52px;
-    padding-top:7px;
-}
-.social-icon2{
-    height: 38px;
-    padding: 20px;
-}
-.social-icon{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-.Aboutimg{
-    height: 400px;
-    display: flex;
-    padding-left: 300px;
-    border:2px solid white;
-}
-.Aboutimg:hover{
-    border: 10px solid aquamarine;
-}
-.paraabout{
-    color: white;
-    text-align: center;
-}
-.paraabout:hover{
-    color: aquamarine;
-}
-.about{
-    color: white;
-    font-family: "Headland One", serif;
-    text-align: center;
-    font-style: italic;
-    font-size: 20px;
-    text-decoration: underline dotted;
-}
-.pic-container{
-    display: flex;
-    flex-direction: row;
-    padding: 30px;
-}
-.line{
-    color: black;
-}
-.iitpic{
-    padding-right: 50px;
-}
-.certificate{
-    color: #fff;
-    text-decoration: underline;
-}
-.certificate:hover{
-    color: aquamarine;
-}
-.certificate1{
-    color: #fff;
-    padding-left: 1000px;
-    text-decoration: underline;
-}
-.certificate1:hover{
-    color: aquamarine;
+
+/* Media queries for mobile screens */
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-left, .navbar-right {
+        padding: 15px;
+    }
+
+    .logo-image {
+        height: 150px;
+        padding-left: 0;
+    }
+
+    .a-element {
+        font-size: 16px;
+    }
+
+    .pic {
+        height: auto;
+        width: 100%;
+    }
+
+    .Home {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .Home-left {
+        width: 100%;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .Home-right {
+        width: 100%;
+        padding-left: 0;
+        padding-top: 20px;
+    }
+
+    .Home-h1 {
+        font-size: 40px;
+        padding-left: 0;
+    }
+
+    .Home-p {
+        padding: 20px;
+    }
+
+    .Aboutimg {
+        height: auto;
+        max-width: 100%;
+    }
+
+    .paraabout {
+        padding: 10px;
+    }
+
+    .skill-container {
+        flex-direction: column;
+    }
+
+    .skil-card {
+        margin: 10px;
+    }
+
+    .contact-info, .social-icons {
+        padding: 10px;
+    }
 }
