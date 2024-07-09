@@ -178,4 +178,8 @@ body {
         height: 30px; /* Adjust size of social icons */
         padding: 5px;
     }
+    .social-icon2 {
+        height: 20px;
+        padding: 5px;
+    }
 }
