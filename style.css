@@ -175,7 +175,10 @@ padding-top: 30px;
 }
 .iitpic{
     padding-right: 50px;
-    height: 20px
+    height: 400px;
+    display: flex;
+    padding-left: 300px;
+    border:2px solid white;
 }
 .certificate{
     color: #fff;
