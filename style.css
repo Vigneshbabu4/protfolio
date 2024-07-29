@@ -150,15 +150,6 @@ padding-top: 30px;
     flex-direction: row;
     justify-content: center;
 }
-.Aboutimg{
-    height: 400px;
-    display: flex;
-    padding-left: 300px;
-    border:2px solid white;
-}
-.Aboutimg:hover{
-    border: 10px solid aquamarine;
-}
 .paraabout{
     color: white;
     text-align: center;
