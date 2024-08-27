@@ -7,7 +7,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: rgba(3, 3, 3, 0.962);
+    background-color: black;
 }
 .navbar-left{
     padding-left: 30px;
@@ -22,7 +22,7 @@ padding-top: 30px;
 
 .logo-image{
     height: 275px;
-    padding-left: 150px;
+    padding-left: 200px;
     
 }
 .a-element{
