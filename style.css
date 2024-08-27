@@ -195,3 +195,138 @@ padding-top: 30px;
 .certificate1:hover{
     color: aquamarine;
 }
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+.navbar-left img {
+    height: 50px;
+}
+
+.navbar-right a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.Home, .About, .Skills, .contact {
+    padding: 20px;
+    margin: 20px;
+}
+
+.Home-left {
+    width: 60%;
+    float: left;
+}
+
+.Home-right {
+    width: 40%;
+    float: right;
+}
+
+.Home-right img {
+    max-width: 100%;
+    height: auto;
+}
+
+.skill-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skil-card {
+    width: 30%;
+}
+
+.contact-info p, .social-icon img {
+    margin: 5px 0;
+}
+
+.social-icon img {
+    height: 40px;
+}
+
+/* Media Queries */
+
+/* For devices with width less than 768px */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-left img {
+        height: 40px;
+    }
+
+    .navbar-right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Home-left, .Home-right {
+        width: 100%;
+        text-align: center;
+    }
+
+    .skill-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skil-card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .social-icon img {
+        height: 30px;
+    }
+}
+
+/* For devices with width less than 480px */
+@media (max-width: 480px) {
+    .navbar-left img {
+        height: 30px;
+    }
+
+    .navbar-right a {
+        padding: 5px;
+    }
+
+    .Home-h1 {
+        font-size: 24px;
+    }
+
+    .Home-p {
+        font-size: 14px;
+    }
+
+    .skill-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skil-card {
+        width: 90%;
+        margin-bottom: 15px;
+    }
+
+    .contact-info p {
+        font-size: 14px;
+    }
+
+    .social-icon img {
+        height: 25px;
+    }
+}
