@@ -7,7 +7,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: black;
+    background-color: rgba(3, 3, 3, 0.962);
 }
 .navbar-left{
     padding-left: 30px;
@@ -71,7 +71,7 @@ padding-top: 30px;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: gradient 3s linear infinite;
-    font-size: 40px;
+    font-size: 60px;
     font-family: "Racing Sans One", sans-serif;
 }
 @keyframes gradient{
@@ -194,63 +194,4 @@ padding-top: 30px;
 }
 .certificate1:hover{
     color: aquamarine;
-}
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
-}
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    background-color: #333;
-    color: white;
-}
-
-.navbar-left img {
-    height: 50px;
-}
-
-.navbar-right a {
-    color: white;
-    padding: 10px;
-    text-decoration: none;
-}
-
-.Home, .About, .Skills, .contact {
-    padding: 20px;
-    margin: 20px;
-}
-
-.Home-left {
-    width: 60%;
-    float: left;
-}
-
-.Home-right {
-    width: 40%;
-    float: right;
-}
-
-.Home-right img {
-    max-width: 100%;
-    height: auto;
-}
-
-.skill-container {
-    display: flex;
-    justify-content: space-between;
-}
-
-.skil-card {
-    width: 30%;
-}
-
-.contact-info p, .social-icon img {
-    margin: 5px 0;
-}
-
-.social-icon img {
-    height: 40px;
 }
