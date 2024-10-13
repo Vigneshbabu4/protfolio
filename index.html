@@ -5,7 +5,287 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>vignesh</title>
     <link rel="icon" href="favicon.png">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&family=Headland+One&family=Oleo+Script:wght@400;700&family=Racing+Sans+One&display=swap');
+body{
+    margin: 0%;
+    background-color: black;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgba(3, 3, 3, 0.962);
+}
+.navbar-left{
+    padding-left: 30px;
+}
+.navbar-right {    
+padding-right: 100px;
+align-items: center;
+display: flex;
+flex-direction: row;
+padding-top: 30px;
+}
+
+.logo-image{
+    height: 275px;
+
+    
+}
+.a-element{
+    padding: 10px;
+    margin: 10px;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+.a-element:hover{
+    color: aquamarine;
+}
+.pic{
+    height: 420px;
+    padding-right: 10px;
+    border-radius: 100vh;
+    filter: grayscale(100%);
+}
+.pic:hover{
+    filter: grayscale(0%);
+}
+.Home{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 70vh;
+    margin: 5px;
+    background-color: black;
+}
+.Home-left{
+    width: 50vw;
+    color: white;
+    text-align:right;
+    size: 200px;
+}
+.Home-right{
+    width: 50vw;
+    padding-left: 20px;
+}
+.Home-h1 {
+    background: linear-gradient(to right, rgba(0, 168, 253, 1), #fff 35%, #e00a95);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 3s linear infinite;
+    font-size: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+@keyframes gradient{
+    0%{background-position: 0% 75%;}
+    50%{background-position:100% 50% ;}
+    100%{background-position: 0% 70;}
+}
+.Home-p{
+    font-family: "Encode Sans Expanded", sans-serif;
+    color: #fff;
+
+}
+.Home-p:hover{
+    color: aquamarine;
+}
+.Skills{
+    color: white;
+    padding: 50px;
+    text-align: center;
+}
+.headingskills{
+    font-size: 30px;
+    letter-spacing: 3px;
+    font-weight: bold;
+ 
+}
+.skill-container{
+    display: flex;
+    flex-direction: column;
+}
+.skil-card{
+    margin: 20px;
+}
+.skillh1{
+    font-family: "Headland One", serif;
+}
+.skillh2{
+    font-family: "Encode Sans Expanded", sans-serif;
+    color: #fff;
+}
+.skillh2:hover{
+    color: aquamarine;
+}
+.pic-2{
+   height: 150px
+}
+.pic-3{
+    height: 150px;
+}
+.pic-1{
+    height: 150px;
+}
+.iitpic{
+    height: 400px;
+    margin-left: 350px;
+    border: #fff 2px solid; 
+}
+.contact{
+    color: #fff;
+    text-align: center;
+}
+.contact-info{
+    font-family: "Encode Sans Expanded", sans-serif;
+    color: #fff;
+}
+.contact-info:hover{
+    color: aquamarine;
+}
+.social-icons{
+    height: 47px;
+    filter: grayscale(100%);
+}
+.social-icons:hover{
+    filter: grayscale(0%);
+}
+.linkpic{
+    height: 34px;
+    padding-top: 3px;
+    filter: grayscale(100%);
+}
+.linkpic:hover{
+    filter: grayscale(0%);
+}
+.fb{
+    height: 36px;
+    filter: grayscale(100%);
+}
+.fb:hover{
+    filter: grayscale(0%);
+}
+.paraabout{
+    color: white;
+    text-align: center;
+}
+.paraabout:hover{
+    color: aquamarine;
+}
+.about{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+
+}
+.line{
+    color: black;
+}
+.certificate{
+    color: #fff;
+    text-decoration: underline;
+}
+.certificate:hover{
+    color: aquamarine;
+}
+.certificate1{
+    color: #fff;
+    padding-left: 1000px;
+    text-decoration: underline;
+}
+.certificate1:hover{
+    color: aquamarine;
+}
+.intern{
+    text-align: center;
+    color: #fff;
+    
+}
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stack navbar items */
+        padding: 10px; /* Reduce padding */
+    }
+    .Home {
+        flex-direction: column; /* Stack Home content */
+        height: auto; /* Allow auto height */
+        align-items: center; /* Center content */
+    }
+    .Home-left, .Home-right {
+        width: 100%; /* Full width for small screens */
+        text-align: center; /* Center text */
+    }
+    .logo-image {
+        height: 150px; /* Adjust logo size */
+    }
+    .iitpic {
+        height: auto; /* Allow auto height for image */
+        width: 90%; /* Make the IIT image responsive */
+        margin-left: 0; /* Reset margin for center alignment */
+    }
+    .pic {
+        height: 250px; /* Reduce size for smaller screens */
+    }
+    .social-icons, .linkpic, .fb {
+        height: 30px; /* Adjust icon sizes */
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .navbar {
+        flex-direction: row; /* Horizontal layout */
+    }
+    .Home {
+        flex-direction: row; /* Keep original layout */
+        height: auto; /* Allow auto height */
+    }
+    .Home-left, .Home-right {
+        width: 50vw; /* Maintain half width */
+    }
+    .logo-image {
+        height: 200px; /* Adjust logo size */
+    }
+    .iitpic {
+        height: 400px; /* Adjust image size */
+        width: auto; /* Maintain aspect ratio */
+        margin-left: auto; /* Center align */
+        margin-right: auto; /* Center align */
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+    .navbar {
+        padding: 10px 50px; /* Adjust padding */
+    }
+    .Home-h1 {
+        font-size: 50px; /* Adjust font size */
+    }
+    .Home-p {
+        font-size: 18px; /* Adjust font size */
+    }
+    .iitpic {
+        height: 500px; /* Adjust image size */
+    }
+}
+
+@media (min-width: 1201px) {
+    .Home {
+        height: 80vh; /* Keep larger height */
+    }
+    .navbar-right {
+        padding-right: 150px; /* Maintain padding */
+    }
+}
+
+    </style>
 </head>
 <body>
       <div class="navbar">
@@ -30,31 +310,83 @@
             Artificial Intelligence & Machine Learning: Machine learning algorithms, deep learning concepts</p>
         </div>
         <div class="Home-right">
-          <img  class="pic"src="WhatsApp Image 2024-05-25 at 13.01.15_bcb2a7fc.jpg">
+          <img  class="pic"src="dp1.jpg">
         </div>
       </div>
       <div class="About" id="About">
         <div class="about">
-          <h1>About</h1>
-        </div>
-        <div class="pic-container">
-          <div class="iitpic"><img class="Aboutimg" src="WhatsApp Image 2024-05-26 at 00.01.25_39add944.jpg"></div>
-        </div>
-          <p class="paraabout">visted IIT hyderabad forI'm thrilled to hear about your exciting experience! It sounds like attending the hashcltag#datascience workshop <br>at IIT Hyderabad by Remark Skills technology workshop was a truly enriching and rewarding event.hashtag#iithyderabad . iam so thankful to hashtag#remarkskills for the wonderful opportunity.i work onPython data science is the use of Python programming language to perform data analysis and extract actionable insights from data12. Python is widely used by data scientists because it has in-built mathematical libraries and functions, making it easier to calculate mathematical problems1. Python also helps newcomers understand and master data sciencPython data science is the use of Python programming language to perform data analysis and extract actionable insights from data12. Python is widely used by data scientists because it has in-built mathematical libraries and functions, making it easier to calculate mathematical problems1. <br>Python also helps newcomers understand and master data science </p>
-          <a href="https://www.linkedin.com/posts/guthi-vignesh-babu-29b307289_datascience-iithyderabad-remarkskills-activity-7164760971977089024-mp0V?utm_source=share&utm_medium=member_desktop">
-            <p class="certificate1">view certificate</p>
-          </a>
+          <h1><b>ABOUT</b></h1>
+        </div>  
+          <section>
+            <div>
+                <img class="iitpic" src="WhatsApp Image 2024-05-26 at 00.01.25_39add944.jpg">
+              </div>
+              <p class="paraabout">visted IIT hyderabad forI'm thrilled to hear about your exciting experience! It sounds like attending the hashcltag#datascience workshop <br>at IIT Hyderabad by Remark Skills technology workshop was a truly enriching and rewarding event.hashtag#iithyderabad . iam so thankful to hashtag#remarkskills for the wonderful opportunity.i work onPython data science is the use of Python programming language to perform data analysis and extract actionable insights from data12. Python is widely used by data scientists because it has in-built mathematical libraries and functions, making it easier to calculate mathematical problems1. Python also helps newcomers understand and master data sciencPython data science is the use of Python programming language to perform data analysis and extract actionable insights from data12. Python is widely used by data scientists because it has in-built mathematical libraries and functions, making it easier to calculate mathematical problems1. <br>Python also helps newcomers understand and master data science </p>
+              <a href="https://www.linkedin.com/posts/guthi-vignesh-babu-29b307289_datascience-iithyderabad-remarkskills-activity-7164760971977089024-mp0V?utm_source=share&utm_medium=member_desktop">
+                <p class="certificate1">view certificate</p>
+              </a>
+          </section>
+          <h1 class="intern"><b>INTERNSHIPS</b></h1>
+          <div class="w3-row-padding">
+            <div class="w3-third w3-container w3-margin-bottom">
+              <a href="https://drive.google.com/file/d/1FDZdXMRXWXJWHbZdzwRw5TsAHputT2LN/view?usp=sharing"><img src="https://aimersociety.com/wp-content/uploads/2023/08/AIMER-Society.png" alt="internships" style="width:100%" class="w3-hover-opacity"></a>
+              <div class="w3-container w3-white">
+                <p><b>AIMER Society</b></p>
+                <p>I worked in Aimersociety as a Cybersecurity intern.learned about sql injections and using of AI tools.  </p>
+              </div>
+            </div>
+            <div class="w3-third w3-container w3-margin-bottom">
+              <a href="https://drive.google.com/file/d/1z2nf56fhtzEx7rL4ow702W5hKEefi-iZ/view?usp=sharing"><img src="https://static.vecteezy.com/system/resources/previews/021/557/479/non_2x/blackbuck-logo-design-antelop-india-silhoutte-blackbuck-logo-design-template-free-vector.jpg" alt="black buck" style="width:100%" class="w3-hover-opacity"></a>
+              <div class="w3-container w3-white">
+                <p><b>BLACKBUCK</b></p>
+                <p> I Worked as  Genarative Ai(chat gpt) intern in the blackbuck. learned prompt engineering </p>
+              </div>
+            </div>
+            <div class="w3-third w3-container">
+              <a href="https://drive.google.com/file/d/1w2EfzROPFLc8qkOtUTSjQW0h7Gjoo7Bm/view?usp=sharing"><img src="https://th.bing.com/th/id/OIP.okOut4IpucB3-N530_8lUgAAAA?rs=1&pid=ImgDetMain" alt="drone" style="width:100%" class="w3-hover-opacity"></a>
+              <div class="w3-container w3-white">
+                <p><b>REMARK SKILLS</b></p>
+                <p>  I have visited to hyderbad IIT  for the work shop on the data science</p>
+              </div>
+            </div>
+          </div>
+        
+          <div class="w3-row-padding">
+            <div class="w3-third w3-container w3-margin-bottom">
+              <img src="https://th.bing.com/th/id/OIP.oXfxG_t4FYA6IATpfmvWFwHaFj?w=232&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="internships" style="width:100%" class="w3-hover-opacity">
+              <div class="w3-container w3-white">
+                <p><b>DRONACHARYA</b></p>
+                <p> Working on the drone integration,System integration </p>
+              </div>
+            </div>
+            <div class="w3-third w3-container w3-margin-bottom">
+              <a href="https://drive.google.com/file/d/1Z5vn7OS-S4kGNRL615wOJllxYlCusAzI/view?usp=drive_link"><img src="https://cdn.bio.link/uploads/profile_pictures/2023-09-01/CvvXPJ0wad0jrzb9G4alZo1npO96Sko2.png" alt="black buck" style="width:100%" class="w3-hover-opacity"></a>
+              <div class="w3-container w3-white">
+                <p><b>CODING RAJA</b></p>
+                <p> developing the skils in the Web Development,Worked on a tasks like MUsic palyer , Resume builder. </p>
+              </div>
+            </div>
+            <div class="w3-third w3-container">
+              <img src="https://avatars.githubusercontent.com/u/140811627?s=280&v=4" alt="drone" style="width:100%" class="w3-hover-opacity">
+              <div class="w3-container w3-white">
+                <p><b>CODSOFT</b></p>
+                <p> Worked on the Ai projects making the chatbots ,face detection.</p>
+              </div>
+            </div>
+          </div>
+          
+    
        <div class="Skills" id="Skills">
           <h1 class="headingskills">SKILLS</h1>
           <div class="skill-container">
             <div class="skil-card">
-              <h1 class="skillh1">Web Development</h1>
+              <h2 class="skillh1">Web Development</h2>
               <img class="pic-1" src="OIP (1).jpg">
               <p class="skillh2">I bring websites to life with clean, semantic HTML that provides a solid structure for exceptional user experiences.
                 "I wield CSS like a maestro, crafting visually stunning and responsive interfaces that adapt seamlessly to any device.</p>
             </div>
             <div class="skil-card">
-              <h1 class="skillh1">Python</h1>
+              <h2 class="skillh1">Python</h2>
               <img class="pic-2" src="5fd71b656c6ba-python-logo.webp"alt pythonpic>
               <p class="skillh2">Python is widely used in data analysis and visualization, with libraries like Pandas, NumPy, and Matplotlib being particularly useful. Web development. Frameworks such as Django and Flask are used for backend web development. Software development. You can use Python in software development for scripting, automation, and testing.</p>
                 <a href="https://www.linkedin.com/posts/guthi-vignesh-babu-29b307289_python-activity-7100133291944460289-V_gO?utm_source=share&utm_medium=member_desktop">
@@ -62,7 +394,7 @@
                 </a>
             </div>
             <div class="skil-card">
-              <h1 class="skillh1"> Ai&Ml</h1>
+              <h2 class="skillh1"> Ai&Ml</h2>
               <img class="pic-3"src="download.jpg">
               <p class="skillh2">AI is the broader concept of enabling a machine or system to sense, reason, act, or adapt like a human.
                 ML is a subfield of AI that uses algorithms trained on data to produce adaptable models that can perform complex tasks</p>
@@ -74,15 +406,12 @@
         <div class="contact-info">
           <p>G.VigeshBabu</p>
           <p>+91 9494031092</p>
-          <a href="" ><p>vigneshguthi3212@gmail.com</p></a>
+          <a href="vigneshguthi3212@gmail.comS" ><p>vigneshguthi3212@gmail.com</p></a>
         </div>
         <div class="social-icon">
-          <div class="social-icons">
            <a href="https://www.instagram.com/vigneshvinnu_46/"><img  class="social-icons" src="pics-photos-instagram-logo-png-4.png"></a>
-          </div>
-             <a href="https://www.linkedin.com/in/guthi-vignesh-babu-29b307289/"><img class="social-icon2" src="linkedIn_PNG7.png"></a>
-             <a href="https://github.com/dashboard"><img class="social-icon2" src="download (1).jpg"></a>
+           <a href="https://www.linkedin.com/in/guthi-vignesh-babu-29b307289/"><img class="linkpic"  src="https://pngimg.com/uploads/linkedIn/linkedIn_PNG7.png" alt="linked"></a>
+           <a href="https://www.facebook.com/profile.php?id=61559597260376"><img class="fb"   src="https://www.freepnglogos.com/uploads/facebook-logo-16.png"></a>
         </div>
-       </div>
 </body>
-</html>
+       </html>
