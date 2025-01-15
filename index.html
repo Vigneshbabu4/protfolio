@@ -25,28 +25,33 @@ body{
 .navbar-left{
     padding-left: 30px;
 }
-.navbar-right {    
-padding-right: 90px;
-align-items: center;
-display: flex;
-flex-direction: row;
-padding-top: 30px;
+.navbar-right {
+    padding-right: 90px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
 }
-.logo-image{
-    height: 275px;
 
-    
-}
-.a-element{
+.navbar-right .a-element {
     padding: 10px;
     margin: 10px;
     color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
     font-weight: bold;
+    text-decoration: none; /* Remove underline */
 }
-.a-element:hover{
-    color: aquamarine;
+
+.navbar-right .a-element:hover {
+    color: aquamarine; /* No color change on hover */
+    text-decoration: none; /* Ensure no underline on hover */
+}
+
+.logo-image{
+    height: 275px;
+
+    
 }
 .pic{
     height: 420px;
@@ -138,6 +143,7 @@ padding-top: 30px;
     height: 400px;
     margin-left: 450px;
     border: #fff 2px solid; 
+    
 }
 .contact{
     color: #fff;
@@ -199,6 +205,7 @@ padding-top: 30px;
 .intern{
     text-align: center;
     color: #fff;
+    padding-top: 50px;
     
 }
 .sm{
@@ -293,7 +300,7 @@ padding-top: 30px;
           <img  class="logo-image" src="OIP.jpg" >      
         </div>
         <div class="navbar-right">
-            <a class="a-element" href="#HomeS">Home</a>
+            <a class="a-element " href="#HomeS">Home</a>
             <a class="a-element"href="#About">About</a>
             <a class="a-element" href="#Skills">Skills</a>
             <a class="a-element" href="#contact">Contact</a>
@@ -313,14 +320,17 @@ padding-top: 30px;
           <img  class="pic"src="dp1.jpg">
         </div>
       </div>
+      
       <div class="About" id="About">
         <div class="about">
           <h1><b>ABOUT</b></h1>
         </div>  
           <section>
             <div>
-                <img class="iitpic" d-flex justify-content centre src="WhatsApp Image 2024-05-26 at 00.01.25_39add944.jpg">
+                <img class="iitpic" src="WhatsApp Image 2024-05-26 at 00.01.25_39add944.jpg">
               </div>
+              <br>
+              <br>
               <p class="paraabout">visted IIT hyderabad forI'm thrilled to hear about your exciting experience! It sounds like attending the hashcltag#datascience workshop <br>at IIT Hyderabad by Remark Skills technology workshop was a truly enriching and rewarding event.hashtag#iithyderabad . iam so thankful to hashtag#remarkskills for the wonderful opportunity.i work onPython data science is the use of Python programming language to perform data analysis and extract actionable insights from data12. Python is widely used by data scientists because it has in-built mathematical libraries and functions, making it easier to calculate mathematical problems1. Python also helps newcomers understand and master data sciencPython data science is the use of Python programming language to perform data analysis and extract actionable insights from data12. Python is widely used by data scientists because it has in-built mathematical libraries and functions, making it easier to calculate mathematical problems1. <br>Python also helps newcomers understand and master data science </p>
           </section>
           <h1 class="intern"><b>INTERNSHIPS</b></h1>
@@ -365,9 +375,9 @@ padding-top: 30px;
               </div>
             </div>
             <div class="w3-third w3-container">
-              <a href="https://drive.google.com/file/d/1G4KKILLPhio2jkL45OP4s5aZtHZcAgdb/view?usp=sharing"><img src="https://www.theindianwire.com/wp-content/uploads/2019/08/spoken-tutorials.jpg" alt="drone" style="width:100%" class="w3-hover-opacity">
-              <div class="w3-container w3-white"></a>
-                <p><b>IIT BOMBAY </b></p>
+              <img src="https://avatars.githubusercontent.com/u/140811627?s=280&v=4" alt="drone" style="width:100%" class="w3-hover-opacity">
+              <div class="w3-container w3-white">
+                <p><b>CODSOFT</b></p>
                 <p> Worked on the Ai projects making the chatbots ,face detection.</p>
               </div>
             </div>
@@ -409,4 +419,4 @@ padding-top: 30px;
            <a href="https://www.facebook.com/profile.php?id=61559597260376"><i class="fa-brands fa-facebook fa-beat-fade fa-2xl" style="color: #3b6cff;"></i></a>
         </div>
 </body>
-       </html>
+</html>
