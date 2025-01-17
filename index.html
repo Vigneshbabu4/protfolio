@@ -20,7 +20,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: rgba(3, 3, 3, 0.962);
+    background-color:black;
 }
 .navbar-left{
     padding-left: 30px;
@@ -49,10 +49,11 @@ body{
 }
 
 .logo-image{
-    height: 275px;
+    height: 250px;
 
     
 }
+
 .pic{
     height: 420px;
     padding-right: 10px;
@@ -106,6 +107,7 @@ body{
     color: white;
     padding: 50px;
     text-align: center;
+    margin-bottom: 20px;
 }
 .headingskills{
     font-size: 30px;
@@ -212,9 +214,127 @@ body{
     color: #fff;
     text-align: center;
 }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 .social-icon{
     padding-bottom: 40px;
 }
+/* General contact form container styles */
+.contact-form-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 0 auto; /* Center align the form */
+    margin-bottom: 30px;
+}
+
+/* Title of the contact form */
+.contact-form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+/* Labels for form fields */
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+/* Input fields and textarea */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Button styling */
+.contact-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Button hover effect */
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Social icons container */
+.social-icon {
+    text-align: center;
+    padding-top: 20px;
+}
+
+/* Responsive adjustments for Android screens */
+@media (max-width: 768px) {
+    .contact-form-container {
+        max-width: 90%; /* Allow form to be more responsive */
+        padding: 15px; /* Adjust padding for smaller screens */
+        margin-top: 20px; /* Provide top margin */
+    }
+    
+    .contact-form input,
+    .contact-form textarea {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .contact-form button {
+        padding: 10px; /* Adjust button padding for smaller screens */
+        font-size: 14px; /* Adjust button text size */
+    }
+    
+    .social-icon {
+        padding-bottom: 20px; /* Adjust bottom padding */
+    }
+
+    /* Adjust icons for mobile screens */
+    .fa-brands {
+        font-size: 30px; /* Make social icons slightly smaller */
+        margin: 10px; /* Add margin between icons */
+    }
+}
+
+/* Additional mobile adjustments for ultra-small screens (Android, etc.) */
+@media (max-width: 480px) {
+    .contact-form-container {
+        max-width: 95%; /* Make the form container take up most of the screen */
+        padding: 10px; /* Reduce padding on very small screens */
+    }
+    
+    .contact-form input,
+    .contact-form textarea {
+        padding: 8px; /* Reduce input padding */
+    }
+
+    .contact-form button {
+        padding: 8px; /* Adjust button padding */
+        font-size: 14px; /* Adjust font size */
+    }
+    
+    .social-icon i {
+        font-size: 28px; /* Adjust icon size */
+    }
+}
+
+
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column; /* Stack navbar items */
@@ -302,6 +422,7 @@ body{
         <div class="navbar-right">
             <a class="a-element " href="#HomeS">Home</a>
             <a class="a-element"href="#About">About</a>
+            <a class="a-element"href="#Internships">Internships</a>
             <a class="a-element" href="#Skills">Skills</a>
             <a class="a-element" href="#contact">Contact</a>
         </div>
@@ -333,7 +454,7 @@ body{
               <br>
               <p class="paraabout">visted IIT hyderabad forI'm thrilled to hear about your exciting experience! It sounds like attending the hashcltag#datascience workshop <br>at IIT Hyderabad by Remark Skills technology workshop was a truly enriching and rewarding event.hashtag#iithyderabad . iam so thankful to hashtag#remarkskills for the wonderful opportunity.i work onPython data science is the use of Python programming language to perform data analysis and extract actionable insights from data12. Python is widely used by data scientists because it has in-built mathematical libraries and functions, making it easier to calculate mathematical problems1. Python also helps newcomers understand and master data sciencPython data science is the use of Python programming language to perform data analysis and extract actionable insights from data12. Python is widely used by data scientists because it has in-built mathematical libraries and functions, making it easier to calculate mathematical problems1. <br>Python also helps newcomers understand and master data science </p>
           </section>
-          <h1 class="intern"><b>INTERNSHIPS</b></h1>
+          <h1 id="Internships" class="intern"><b>INTERNSHIPS</b></h1>
           <p class="sm">(click on the images to open the certificate)</p>
           <div class="w3-row-padding">
             <div class="w3-third w3-container w3-margin-bottom">
@@ -410,13 +531,30 @@ body{
         <h1 class="headingskills">CONTACT US</h1>
         <div class="contact-info">
           <p>G.VigeshBabu</p>
-          <p>+91 9494031092</p>
           <p>vigneshguthi3212@gmail.com</p>
         </div>
+        <div class="contact-form-container">
+            <form action="https://formspree.io/f/mvggnbel" method="post" class="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+    </div>
         <div class="social-icon">
            <a href="https://www.linkedin.com/in/guthi-vignesh-babu-29b307289/"><i class="fa-brands fa-linkedin fa-2xl fa-beat-fade" style="color: #033dea;"></i></a>
            <a href="https://www.instagram.com/vigneshvinnu_46/"><i class="fa-brands fa-instagram p-3 fa-2xl fa-beat-fade" style="color:rgb(217, 46, 137);"red></i></a>
            <a href="https://www.facebook.com/profile.php?id=61559597260376"><i class="fa-brands fa-facebook fa-beat-fade fa-2xl" style="color: #3b6cff;"></i></a>
         </div>
+        <!-- Bootstrap JS (Add this at the end of your body or head) -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"></script>
+
 </body>
 </html>
