@@ -398,6 +398,42 @@
             height: 38px;
             width: 38px;
         }
+        /* Existing CSS remains unchanged */
+
+/* Add these media queries for mobile responsiveness */
+@media (max-width: 768px) {
+    /* Adjust the card layout for mobile view */
+    .d-flex.justify-content-center {
+      flex-direction: column; /* Stack cards vertically */
+      align-items: center; /* Center align cards */
+    }
+  
+    .card {
+      width: 90%; /* Make cards take up most of the screen width */
+      margin: 20px 0; /* Add vertical spacing between cards */
+    }
+  
+    .card-img-top {
+      width: 100%; /* Ensure images fill the card width */
+      height: auto; /* Maintain aspect ratio */
+    }
+  
+    .card-body {
+      text-align: center; /* Center align text in cards */
+    }
+  
+    .card-title,
+    .card-text {
+      font-size: 16px; /* Adjust font size for better readability */
+    }
+  
+    .btn {
+      width: 100%; /* Make buttons full width */
+      margin-top: 10px; /* Add spacing above buttons */
+    }
+  }
+  
+  /* Existing CSS for web view remains unchanged */
     </style>
 </head>
 <body>
@@ -449,80 +485,64 @@
           </section>
         <br>
           <br>
-           <!-- Projects Section -->
-<h1 class="text-center" style="color: #fff;"><b>PROJECTS</b></h1>
-<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center">
-    <!-- Card 1 -->
-    <div class="col">
-        <div class="card h-60">
-            <img class="card-img-top" src="https://i.ytimg.com/vi/8gPONnGIPgw/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLApk45tFx3H61Yy9vBlJ9OaCm3X7w" alt="Virtual Mouse">
-            <div class="card-body">
-                <h5 class="card-title">Virtual Mouse</h5>
-                <p class="card-text">Control your cursor with hand gestures. AI-powered, touch-free navigation!</p>
-                <a href="https://www.linkedin.com/posts/guthi-vignesh-babu-29b307289_gesturecontrol-innovation-tech-activity-7212118301567537153-UYD7?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEX9pNcBYvp9eF8KPGohuVCqduoJp7sE08U" class="btn btn-primary">View Details</a>
-            </div>
-        </div>
-    </div>
-    <!-- Card 2 -->
-    <div class="col">
-        <div class="card h-60">
-            <img class="card-img-top" src="https://media.licdn.com/dms/image/v2/D5612AQGlfhE9IBQ8Bg/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1693596641359?e=2147483647&v=beta&t=r7Ul99DWE8fm-HxxyeCKqa8wBhK_V23EaZnq6hY1_wc" alt="AI Voicebot">
-            <div class="card-body">
-                <h5 class="card-title">AI Voicebot</h5>
-                <p class="card-text">Speech-to-Speech AI Voice Bot. Talk, listen, and interact seamlessly. AI-powered voice recognition and response!</p>
-                <a href="https://www.linkedin.com/posts/guthi-vignesh-babu-29b307289_aimersociety-ai-voicebot-activity-7204810687485800449-DrA_?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEX9pNcBYvp9eF8KPGohuVCqduoJp7sE08U" class="btn btn-primary">View Details</a>
-            </div>
-        </div>
-    </div>
-    <!-- Card 3 -->
-    <div class="col">
-        <div class="card h-60">
-            <img class="card-img-top" src="cr2.jpg" alt="Websites Club">
-            <div class="card-body">
-                <h5 class="card-title">Websites Club</h5>
-                <p class="card-text">DHAN FLY HIGH is a collage drone club integrated into our college website.</p>
-                <a href="https://diet.ac.in/wp-content/uploads/DHAN%20FLY%20HIGH/index.html" class="btn btn-primary">View Website</a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Second Row of Cards -->
-<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center mt-4">
-    <!-- Card 4 -->
-    <div class="col">
-        <div class="card h-60">
-            <img class="card-img-top" src="https://relaxifyapp.com/wordpress/wp-content/uploads/2021/11/Frame-18-3-1.png" alt="Face Emotion Recognition">
-            <div class="card-body">
-                <h5 class="card-title">Face Emotion Recognition</h5>
-                <p class="card-text">It works for sentiment analysis and feedback!</p>
-                <a href="https://www.linkedin.com/posts/guthi-vignesh-babu-29b307289_machinelearning-deeplearning-computervision-activity-7210100805503176704-97YV?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEX9pNcBYvp9eF8KPGohuVCqduoJp7sE08U" class="btn btn-primary">View Details</a>
-            </div>
-        </div>
-    </div>
-    <!-- Card 5 -->
-    <div class="col">
-        <div class="card h-60">
-            <img class="card-img-top" src="https://kotaielectronics.com/wp-content/uploads/2024/03/maxresdefault.jpg" alt="Object Detection">
-            <div class="card-body">
-                <h5 class="card-title">Object Detection</h5>
-                <p class="card-text">Helmet Detection in Traffic. AI-powered system for road safety. Detects riders without helmets in real time!</p>
-                <a href="https://www.linkedin.com/posts/guthi-vignesh-babu-29b307289_aimers-aimersociety-activity-7201578296084500481-czaN?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEX9pNcBYvp9eF8KPGohuVCqduoJp7sE08U" class="btn btn-primary">View Details</a>
-            </div>
-        </div>
-    </div>
-    <!-- Card 6 -->
-    <div class="col">
-        <div class="card h-60">
-            <img class="card-img-top" src="https://cdn.prod.website-files.com/6344c9cef89d6f2270a38908/673f2a3b44c1ed4901bb43bb_6386328bea96dffacc89946b_d1.webp" alt="Portfolio">
-            <div class="card-body">
-                <h5 class="card-title">Portfolio</h5>
-                <p class="card-text">Web Development projects using HTML, CSS, and JavaScript.</p>
-                <a href="https://gvignesh.tech/" class="btn btn-primary">View Website</a>
-            </div>
-        </div>
-    </div>
-</div>
+          <h1 class="text-center" style="color: #fff;"><b>PROJECTS</b></h1>
+          <div class="d-flex justify-content-center">
+            <div class="card pr" style="width: 18rem; margin:40px;">
+                <img class="card-img-top" src="https://i.ytimg.com/vi/8gPONnGIPgw/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLApk45tFx3H61Yy9vBlJ9OaCm3X7w" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Virtual Mouse</h5>
+                  <p class="card-text">Control your cursor with hand gestures.
+                    AI-powered, touch-free navigation!</p>
+                  <a href="https://www.linkedin.com/posts/guthi-vignesh-babu-29b307289_gesturecontrol-innovation-tech-activity-7212118301567537153-UYD7?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEX9pNcBYvp9eF8KPGohuVCqduoJp7sE08U" class="btn btn-primary">view details</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem; margin:40px;">
+                <img class="card-img-top" src="https://media.licdn.com/dms/image/v2/D5612AQGlfhE9IBQ8Bg/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1693596641359?e=2147483647&v=beta&t=r7Ul99DWE8fm-HxxyeCKqa8wBhK_V23EaZnq6hY1_wc" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">AI Voicebot</h5>
+                  <p class="card-text">Speech-to-Speech AI Voice Bot
+                    Talk, listen, and interact seamlessly.
+                    AI-powered voice recognition and response!</p>
+                  <a href="https://www.linkedin.com/posts/guthi-vignesh-babu-29b307289_aimersociety-ai-voicebot-activity-7204810687485800449-DrA_?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEX9pNcBYvp9eF8KPGohuVCqduoJp7sE08U" class="btn btn-primary">View details</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem; margin:40px;">
+                <img class="card-img-top" src="cr2.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">websites club</h5>
+                  <p class="card-text">DHAN FLY HIGH is a collage drone club was integrated in our collage website</p>
+                  <a href="https://diet.ac.in/wp-content/uploads/DHAN%20FLY%20HIGH/index.html" class="btn btn-primary">view website</a>
+                </div>
+              </div>
+          </div>
+          <div class="d-flex justify-content-center">
+            <div class="card pr" style="width: 18rem; margin:40px;">
+                <img class="card-img-top" src="https://camo.githubusercontent.com/efb2fee9235d2184024a439978cb2b584bf381c124b97b4f684c260775353523/68747470733a2f2f69312e77702e636f6d2f736566696b732e636f6d2f77702d636f6e74656e742f75706c6f6164732f323031382f30312f6b69642d65787072657373696f6e732d636f7665722e706e673f726573697a653d3435392532433430392673736c3d31" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Face emotion recognition</h5>
+                  <p class="card-text">it work for the sentiment analysis and feedback!</p>
+                  <a href="https://www.linkedin.com/posts/guthi-vignesh-babu-29b307289_machinelearning-deeplearning-computervision-activity-7210100805503176704-97YV?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEX9pNcBYvp9eF8KPGohuVCqduoJp7sE08U" class="btn btn-primary">view details</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem; margin:40px;">
+                <img class="card-img-top" src="https://kotaielectronics.com/wp-content/uploads/2024/03/maxresdefault.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Object detections</h5>
+                  <p class="card-text">Helmet Detection in Traffic
+                    AI-powered system for road safety.
+                    Detects riders without helmets in real time!!</p>
+                  <a href="https://www.linkedin.com/posts/guthi-vignesh-babu-29b307289_aimers-aimersociety-activity-7201578296084500481-czaN?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEX9pNcBYvp9eF8KPGohuVCqduoJp7sE08U" class="btn btn-primary">View details</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem; margin:40px;">
+                <img class="card-img-top" src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20221222184908/web-development1.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Portfolio</h5>
+                  <p class="card-text">Web Development  projects by html,css,JavaScript</p>
+                  <a href="https://gvignesh.tech/" class="btn btn-primary">view website</a>
+                </div>
+              </div>
+          </div>
           <h1 id="Internships" class="intern"><b>INTERNSHIPS</b></h1>
           <p class="sm">(click on the images to open the certificate)</p>
           <div class="w3-row-padding">
