@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vignesh</title>
+    <link rel="icon" href="favicon.png">
+    <script src="https://kit.fontawesome.com/aa61d806c9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        /* Customize the scrollbar */
+        ::-webkit-scrollbar {
+            width: 12px; /* Width of the scrollbar */
+        }
+
+        /* Track (the background of the scrollbar) */
+        ::-webkit-scrollbar-track {
+            background: black; /* Black track */
+            border-radius: 10px; /* Rounded corners */
+        }
+
+        /* Handle (the draggable part of the scrollbar) */
+        ::-webkit-scrollbar-thumb {
+            background: white; /* White scrollbar */
+            border-radius: 10px; /* Rounded corners */
+            border: 2px solid black; /* Add a border to make it stand out */
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #ccc; /* Light gray on hover */
+        }
+
+        /* Rest of your existing CSS */
+        @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&family=Headland+One&family=Oleo+Script:wght@400;700&family=Racing+Sans+One&display=swap');
+        body {
+            margin: 0%;
+            background-color: black;
+        }
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background-color: black;
+            padding: 10px 0;
+        }
+        .navbar-left {
+            padding-left: 30px;
+        }
+        .navbar-right {
+            padding-right: 90px;
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            padding-top: 30px;
+        }
+        .navbar-right .a-element {
+            padding: 10px;
+            margin: 10px;
+            color: white;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .navbar-right .a-element:hover {
+            color: aquamarine;
+            text-decoration: none;
+        }
+        .logo-image {
+            height: 130px;
+        }
+        .pic {
+            height: 420px;
+            padding-right: 10px;
+            border-radius: 100vh;
+            filter: grayscale(100%);
+        }
+        .pic:hover {
+            filter: grayscale(0%);
+        }
+        .Home {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            height: 60vh;
+            background-color: black;
+        }
+        .Home-left {
+            width: 50vw;
+            color: white;
+            text-align: right;
+            size: 200px;
+        }
+        .Home-right {
+            width: 50vw;
+            padding-left: 20px;
+        }
+        .Home-h1 {
+            background: linear-gradient(to right, rgba(0, 168, 253, 1), #fff 35%, #e00a95);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: gradient 3s linear infinite;
+            font-size: 50px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        @keyframes gradient {
+            0% { background-position: 0% 75%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 70%; }
+        }
+        .Home-p {
+            font-family: "Encode Sans Expanded", sans-serif;
+            color: #fff;
+        }
+        .Home-p:hover {
+            color: aquamarine;
+        }
+        .Skills {
+            color: white;
+            padding: 50px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .headingskills {
+            font-size: 30px;
+            letter-spacing: 3px;
+            font-weight: bold;
+        }
+        .skill-container {
+            display: flex;
+            flex-direction: column;
+        }
+        .skil-card {
+            margin: 20px;
+        }
+        .skillh1 {
+            font-family: "Headland One", serif;
+        }
+        .skillh2 {
+            font-family: "Encode Sans Expanded", sans-serif;
+            color: #fff;
+        }
+        .skillh2:hover {
+            color: aquamarine;
+        }
+        .pic-2 {
+            height: 150px;
+        }
+        .pic-3 {
+            height: 150px;
+        }
+        .pic-1 {
+            height: 150px;
+        }
+        .iitpic {
+            height: 400px;
+            margin-left: 450px;
+            border: #fff 2px solid;
+        }
+        .contact {
+            color: #fff;
+            text-align: center;
+        }
+        .contact-info {
+            font-family: "Encode Sans Expanded", sans-serif;
+            color: #fff;
+        }
+        .contact-info:hover {
+            color: aquamarine;
+        }
+        .linkpic {
+            height: 34px;
+            padding-top: 3px;
+            filter: grayscale(100%);
+        }
+        .linkpic:hover {
+            filter: grayscale(0%);
+        }
+        .fb {
+            height: 36px;
+            filter: grayscale(100%);
+        }
+        .fb:hover {
+            filter: grayscale(0%);
+        }
+        .paraabout {
+            color: white;
+            text-align: center;
+        }
+        .paraabout:hover {
+            color: aquamarine;
+        }
+        .about {
+            color: white;
+            text-align: center;
+            font-size: 20px;
+        }
+        .line {
+            color: black;
+        }
+        .certificate {
+            color: #fff;
+            text-decoration: underline;
+        }
+        .certificate:hover {
+            color: aquamarine;
+        }
+        .certificate1 {
+            color: #fff;
+            padding-left: 1000px;
+            text-decoration: underline;
+        }
+        .certificate1:hover {
+            color: aquamarine;
+        }
+        .intern {
+            text-align: center;
+            color: #fff;
+            padding-top: 50px;
+        }
+        .sm {
+            color: #fff;
+            text-align: center;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .social-icon {
+            padding-bottom: 40px;
+        }
+        .contact-form-container {
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+            background-color: #333;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
+        .contact-form h2 {
+            margin-bottom: 20px;
+            text-align: center;
+            color: #fff;
+        }
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+            color: #fff;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+        .contact-form button {
+            width: 100%;
+            padding: 12px;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 4px;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #0056b3;
+        }
+        .social-icon {
+            text-align: center;
+            padding-top: 20px;
+        }
+        @media (max-width: 768px) {
+            .contact-form-container {
+                max-width: 90%;
+                padding: 15px;
+                margin-top: 20px;
+            }
+            .contact-form input,
+            .contact-form textarea {
+                padding: 10px;
+            }
+            .contact-form button {
+                padding: 10px;
+                font-size: 14px;
+            }
+            .social-icon {
+                padding-bottom: 20px;
+            }
+            .fa-brands {
+                font-size: 30px;
+                margin: 10px;
+            }
+        }
+        @media (max-width: 480px) {
+            .contact-form-container {
+                max-width: 95%;
+                padding: 10px;
+            }
+            .contact-form input,
+            .contact-form textarea {
+                padding: 8px;
+            }
+            .contact-form button {
+                padding: 8px;
+                font-size: 14px;
+            }
+            .social-icon i {
+                font-size: 28px;
+            }
+        }
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                padding: 10px;
+            }
+            .Home {
+                flex-direction: column;
+                height: auto;
+                align-items: center;
+            }
+            .Home-left, .Home-right {
+                width: 100%;
+                text-align: center;
+            }
+            .logo-image {
+                height: 150px;
+            }
+            .iitpic {
+                height: auto;
+                width: 90%;
+                margin-left: 0;
+            }
+            .pic {
+                height: 250px;
+            }
+        }
+        @media (min-width: 769px) and (max-width: 992px) {
+            .navbar {
+                flex-direction: row;
+            }
+            .Home {
+                flex-direction: row;
+                height: auto;
+            }
+            .Home-left, .Home-right {
+                width: 50vw;
+            }
+            .logo-image {
+                height: 200px;
+            }
+            .iitpic {
+                height: 400px;
+                width: auto;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        @media (min-width: 993px) and (max-width: 1200px) {
+            .navbar {
+                padding: 10px 50px;
+            }
+            .Home-h1 {
+                font-size: 50px;
+            }
+            .Home-p {
+                font-size: 18px;
+            }
+            .iitpic {
+                height: 500px;
+            }
+        }
+        @media (min-width: 1201px) {
+            .Home {
+                height: 80vh;
+            }
+            .navbar-right {
+                padding-right: 150px;
+            }
+        }
+        .hee {
+            height: 38px;
+            width: 38px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-left">
+            <img class="logo-image" src="OIP.jpg">
+        </div>
+        <div class="navbar-right">
+            <a class="a-element" href="#Home">Home</a>
+            <a class="a-element" href="#About">About</a>
+            <a class="a-element" href="#Internships">Internships</a>
+            <a class="a-element" href="#Skills">Skills</a>
+            <a class="a-element" href="#contact">Contact</a>
+        </div>
+    </div>
+    
+      <div class="Home" id="Home">
+        <div class="Home-left">
+          <h1 class="Home-h1">Guthi.Vignesh Babu</h1>
+          <p class="Home-p">I'm a highly motivated CSE(AI&ML) student at Dhanekula College in Vijayawada, India, with a strong interest in applying technology to solve real-world problems. I'm proficient in Python, web development, and Artificial Intelligence/Machine Learning, constantly seeking to expand my knowledge and skills in these areas.<br>
+            <br>
+          <b><i> Technical Skills:</i></b>
+            Programming Languages: Python (libraries like NumPy, Pandas, TensorFlow)
+            Web Development: [List specific technologies you're familiar with, e.g., HTML, CSS, JavaScript, frameworks like Django or Flask]
+            Artificial Intelligence & Machine Learning: Machine learning algorithms, deep learning concepts</p>
+        </div>
+        <div class="Home-right">
+          <img  class="pic"src="dp1.jpg">
+        </div>
+      </div>
+      
+      <div class="About" id="About">
+        <div class="about">
+          <h1><b>ABOUT</b></h1>
+        </div>  
+          <section>
+            <div>
+                <img class="iitpic" src="dp2.jpg">
+              </div>
+              <br>
+              <br>
+              <p class="paraabout">Hello! I’m Vignesh, a passionate and driven student pursuing Artificial Intelligence and Machine Learning (AIML) at Dhanekula Institute of Engineering and Technology, Vijayawada. With a strong interest in web development and AI tools, I enjoy exploring the intersection of technology and creativity. I am constantly learning and experimenting with new tools and frameworks to build innovative solutions. My goal is to leverage my skills to create impactful and user-friendly applications. I thrive on challenges and am always eager to expand my knowledge in the ever-evolving tech landscape. Let’s connect and build something amazing together! </p>
+              <br>
+              <div class="text-center mt-4">
+                  <a href="Vigneshbabu-CV.pdf" download="VIGNESH_RESUME.pdf" class="btn btn-primary">
+                      <i class="fa fa-download"></i> Download My CV
+                  </a>
+             </div>
+          </section>
+        <br>
+          <br>
+          <h1 class="text-center" style="color: #fff;"><b>PROJECTS</b></h1>
+          <div class="d-flex justify-content-center">
+            <div class="card pr" style="width: 18rem; margin:40px;">
+                <img class="card-img-top" src="https://i.ytimg.com/vi/8gPONnGIPgw/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLApk45tFx3H61Yy9vBlJ9OaCm3X7w" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Virtual Mouse</h5>
+                  <p class="card-text">Control your cursor with hand gestures.
+                    AI-powered, touch-free navigation!</p>
+                  <a href="https://www.linkedin.com/posts/guthi-vignesh-babu-29b307289_gesturecontrol-innovation-tech-activity-7212118301567537153-UYD7?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEX9pNcBYvp9eF8KPGohuVCqduoJp7sE08U" class="btn btn-primary">view details</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem; margin:40px;">
+                <img class="card-img-top" src="https://media.licdn.com/dms/image/v2/D5612AQGlfhE9IBQ8Bg/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1693596641359?e=2147483647&v=beta&t=r7Ul99DWE8fm-HxxyeCKqa8wBhK_V23EaZnq6hY1_wc" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">AI Voicebot</h5>
+                  <p class="card-text">Speech-to-Speech AI Voice Bot
+                    Talk, listen, and interact seamlessly.
+                    AI-powered voice recognition and response!</p>
+                  <a href="https://www.linkedin.com/posts/guthi-vignesh-babu-29b307289_aimersociety-ai-voicebot-activity-7204810687485800449-DrA_?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEX9pNcBYvp9eF8KPGohuVCqduoJp7sE08U" class="btn btn-primary">View details</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem; margin:40px;">
+                <img class="card-img-top" src="cr2.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">websites club</h5>
+                  <p class="card-text">DHAN FLY HIGH is a collage drone club was integrated in our collage website</p>
+                  <a href="https://diet.ac.in/wp-content/uploads/DHAN%20FLY%20HIGH/index.html" class="btn btn-primary">view website</a>
+                </div>
+              </div>
+          </div>
+          <div class="d-flex justify-content-center">
+            <div class="card pr" style="width: 18rem; margin:40px;">
+                <img class="card-img-top" src="https://camo.githubusercontent.com/efb2fee9235d2184024a439978cb2b584bf381c124b97b4f684c260775353523/68747470733a2f2f69312e77702e636f6d2f736566696b732e636f6d2f77702d636f6e74656e742f75706c6f6164732f323031382f30312f6b69642d65787072657373696f6e732d636f7665722e706e673f726573697a653d3435392532433430392673736c3d31" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Face emotion recognition</h5>
+                  <p class="card-text">it work for the sentiment analysis and feedback!</p>
+                  <a href="https://www.linkedin.com/posts/guthi-vignesh-babu-29b307289_machinelearning-deeplearning-computervision-activity-7210100805503176704-97YV?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEX9pNcBYvp9eF8KPGohuVCqduoJp7sE08U" class="btn btn-primary">view details</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem; margin:40px;">
+                <img class="card-img-top" src="https://www.hitechbpo.com/wp-content/uploads/2023/10/object-detection-models.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Object detections</h5>
+                  <p class="card-text">Helmet Detection in Traffic
+                    AI-powered system for road safety.
+                    Detects riders without helmets in real time!!</p>
+                  <a href="https://www.linkedin.com/posts/guthi-vignesh-babu-29b307289_aimers-aimersociety-activity-7201578296084500481-czaN?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEX9pNcBYvp9eF8KPGohuVCqduoJp7sE08U" class="btn btn-primary">View details</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem; margin:40px;">
+                <img class="card-img-top" src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20221222184908/web-development1.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Portfolio</h5>
+                  <p class="card-text">Web Development  projects by html,css,JavaScript</p>
+                  <a href="https://gvignesh.tech/" class="btn btn-primary">view website</a>
+                </div>
+              </div>
+          </div>
+          <h1 id="Internships" class="intern"><b>INTERNSHIPS</b></h1>
+          <p class="sm">(click on the images to open the certificate)</p>
+          <div class="w3-row-padding">
+            <div class="w3-third w3-container w3-margin-bottom">
+              <a href="https://drive.google.com/file/d/1FDZdXMRXWXJWHbZdzwRw5TsAHputT2LN/view?usp=sharing"><img src="https://aimersociety.com/wp-content/uploads/2023/08/AIMER-Society.png" alt="internships" style="width:100%" class="w3-hover-opacity"></a>
+              <div class="w3-container w3-white">
+                <p><b>AIMER Society</b></p>
+                <p>I worked in Aimersociety as a Cybersecurity intern.learned about sql injections and using of AI tools.  </p>
+              </div>
+            </div>
+            <div class="w3-third w3-container w3-margin-bottom">
+              <a href="https://drive.google.com/file/d/1z2nf56fhtzEx7rL4ow702W5hKEefi-iZ/view?usp=sharing"><img src="https://static.vecteezy.com/system/resources/previews/021/557/479/non_2x/blackbuck-logo-design-antelop-india-silhoutte-blackbuck-logo-design-template-free-vector.jpg" alt="black buck" style="width:100%" class="w3-hover-opacity"></a>
+              <div class="w3-container w3-white">
+                <p><b>BLACKBUCK</b></p>
+                <p> I Worked as  Genarative Ai(chat gpt) intern in the blackbuck. learned prompt engineering </p>
+              </div>
+            </div>
+            <div class="w3-third w3-container">
+              <a href="https://drive.google.com/file/d/1w2EfzROPFLc8qkOtUTSjQW0h7Gjoo7Bm/view?usp=sharing"><img src="https://th.bing.com/th/id/OIP.okOut4IpucB3-N530_8lUgAAAA?rs=1&pid=ImgDetMain" alt="drone" style="width:100%" class="w3-hover-opacity"></a>
+              <div class="w3-container w3-white">
+                <p><b>REMARK SKILLS</b></p>
+                <p>  I have visited to hyderbad IIT  for the work shop on the data science</p>
+              </div>
+            </div>
+          </div>
+        
+          <div class="w3-row-padding">
+            <div class="w3-third w3-container w3-margin-bottom">
+              <img src="https://th.bing.com/th/id/OIP.oXfxG_t4FYA6IATpfmvWFwHaFj?w=232&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="internships" style="width:100%" class="w3-hover-opacity">
+              <div class="w3-container w3-white">
+                <p><b>DRONACHARYA</b></p>
+                <p> Working on the drone integration,System integration </p>
+              </div>
+            </div>
+            <div class="w3-third w3-container w3-margin-bottom">
+              <a href="https://drive.google.com/file/d/1Z5vn7OS-S4kGNRL615wOJllxYlCusAzI/view?usp=drive_link"><img src="https://cdn.bio.link/uploads/profile_pictures/2023-09-01/CvvXPJ0wad0jrzb9G4alZo1npO96Sko2.png" alt="black buck" style="width:100%" class="w3-hover-opacity"></a>
+              <div class="w3-container w3-white">
+                <p><b>CODING RAJA</b></p>
+                <p> developing the skils in the Web Development,Worked on a tasks like MUsic palyer , Resume builder. </p>
+              </div>
+            </div>
+            <div class="w3-third w3-container">
+              <a href="https://drive.google.com/file/d/1G4KKILLPhio2jkL45OP4s5aZtHZcAgdb/view?usp=sharing"><img src="https://i.ytimg.com/vi/UCWqRqp-G6w/maxresdefault.jpg" alt="drone" style="width:100%" class="w3-hover-opacity"></a>
+              <div class="w3-container w3-white">
+                <p><b>SPOKEN TUTORIAL IIT BOMBAY</b></p>
+                <p> Completion of C language course </p>
+              </div>
+            </div>
+          </div>
+          
+    
+       <div class="Skills" id="Skills">
+          <h1 class="headingskills">SKILLS</h1>
+          <div class="skill-container">
+            <div class="skil-card">
+              <h2 class="skillh1">Web Development</h2>
+              <img class="pic-1" src="OIP (1).jpg">
+              <p class="skillh2">I bring websites to life with clean, semantic HTML that provides a solid structure for exceptional user experiences.
+                "I wield CSS like a maestro, crafting visually stunning and responsive interfaces that adapt seamlessly to any device.</p>
+            </div>
+            <div class="skil-card">
+              <h2 class="skillh1">Python</h2>
+              <img class="pic-2" src="5fd71b656c6ba-python-logo.webp"alt pythonpic>
+              <p class="skillh2">Python is widely used in data analysis and visualization, with libraries like Pandas, NumPy, and Matplotlib being particularly useful. Web development. Frameworks such as Django and Flask are used for backend web development. Software development. You can use Python in software development for scripting, automation, and testing.</p>
+            </div>
+            <div class="skil-card">
+              <h2 class="skillh1"> Ai&Ml</h2>
+              <img class="pic-3"src="download.jpg">
+              <p class="skillh2">AI is the broader concept of enabling a machine or system to sense, reason, act, or adapt like a human.
+                ML is a subfield of AI that uses algorithms trained on data to produce adaptable models that can perform complex tasks</p>
+            </div>
+          </div>
+       </div>
+       <div class="contact" id="contact">
+        <h1 class="headingskills">CONTACT US</h1>
+        <div class="contact-info">
+          <p>G.VigeshBabu</p>
+          <p>vigneshguthi3212@gmail.com</p>
+        </div>
+        <div class="contact-form-container">
+            <form action="https://formspree.io/f/mvggnbel" method="post" class="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+    </div>
+        <div class="social-icon">
+           <a href="https://www.linkedin.com/in/guthi-vignesh-babu-29b307289/"><i class="fa-brands fa-linkedin fa-2xl fa-beat-fade" style="color: #033dea;"></i></a>
+           <a href="https://www.instagram.com/vigneshvinnu_46/"><i class="fa-brands fa-instagram p-3 fa-2xl fa-beat-fade" style="color:rgb(217, 46, 137);"red></i></a>
+           <a href="https://www.facebook.com/profile.php?id=61559597260376"><i class="fa-brands fa-facebook fa-beat-fade fa-2xl" style="color: #3b6cff;"></i></a>
+        </div>
+        <!-- Bootstrap JS (Add this at the end of your body or head) -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"></script>
+
+</body>
+</html>
